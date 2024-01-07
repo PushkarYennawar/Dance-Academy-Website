@@ -1,0 +1,63 @@
+doctype html 
+html 
+  head 
+    title This is title 
+    style 
+      include ../static/style.css 
+  body 
+    nav#navbar.top
+      div#logo
+          img(src='/static/logo.png')
+          h5 PDA
+      ul
+        li #[a(href = "/") HOME] 
+        li #[a(href = "/about") ABOUT]
+        li #[a(href = "/services") SERVICES]
+        li #[a(href = "/classinfo") CLASS INFO]
+        li #[a(href = "/contact") CONTACT US]
+
+    section#introSection
+      h1 Welcome to Pushkar's Dance Academy 
+      p Eat Sleep Dance Repeat
+
+    section#ourMission 
+      h2 Our Mission 
+      div.container 
+        div.card  
+          h3 Dance Perfection
+          div.card-box
+            div.card-img#img1
+              img(src="/static/box1.png", alt="Rendering") 
+            
+            div.card-content
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        div.card  
+          h3 Dance the way you Like
+          div.card-box
+            div.card-img#img2
+              img(src="/static/box2.png", alt="Rendering") 
+
+            div.card-content
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quis laboriosam perferendis obcaecati incidunt.
+        div.card  
+          h3 Expert Teaching
+          div.card-box
+            .card-img#img3 
+              img(src="/static/box3.png", alt="Rendering") 
+
+            div.card-content
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quis laboriosam perferendis obcaecati incidunt. 
+    section#sponsorsSection
+      h2 Our Sponsors 
+      div#sponsors
+        img(src="/static/apple.png", alt="")
+        img(src="/static/hp.png", alt="")
+        img(src="/static/microsoft.png", alt="")
+        img(src="/static/skype.png", alt="")
+
+    footer#footer 
+      |Copyright © 2023 Pushkar'sDanceAcademy.com | All rights reserved
+    script 
+      include ../static/index.js 
+
+
